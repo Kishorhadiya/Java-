@@ -29,7 +29,9 @@ import java.sql.*;
 
                   
                  
-                String sql="select * from emp where salary=(select max(salary) from emp)";
+                // String sql="select * from emp where salary=(select max(salary) from emp)";
+
+          String sql= "select *from emp where name like 'A%'";
 
                 stmt=conn.createStatement();
                 ResultSet rs=stmt.executeQuery(sql);
